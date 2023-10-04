@@ -7,3 +7,4 @@ dex1 = 6    # dexterity atribute
 intl = 4    # inteligence atribute
 hh1 = 500   # health atribute
 lv1 = 1     # lives atribute
+#

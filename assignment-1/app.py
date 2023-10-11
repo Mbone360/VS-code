@@ -38,35 +38,32 @@ def main():
             
            
     print("The 3 objectives are 1. Escaping the Necrons (Dexterity)\n2. Defeating the Necrons (Strength)\n3. Capturing the control point")
-    
-    if pick == 1:
-        print(game.c1, " the Necron force!")
-        roll1 = game.dice
-        print("You rolled a ", roll1)
-        if player == role1.name:
-            result1 = role1.dex + roll1
-        elif player == role2.name:
-            result1 = role2.dex + roll1
-        game.resolve1
 
-    elif pick == 2:
-        print(game.c2, "!")
-        roll2 = game.dice
-        print("You rolled a ", roll2)
-        if player == role1.name:
-            result1 = role1.strg + roll2
-        elif player == role2.name:
-            result1 = role2.strg + roll2
-        game.resolve2
+    print(game.c1, " the Necron force!")
+    roll1 = game.dice
+    print("You rolled a ", roll1)
+    if player == role1.name:
+        result1 = role1.dex + roll1
+    elif player == role2.name:
+        result1 = role2.dex + roll1
+    game.resolve1
 
-    elif pick == 1:
-        print(game.c3, "!")
-        roll3 = game.dice
-        print("You rolled a ", roll3)
-        if player == role1.name:
-            result1 = role1.int + roll3
-        elif player == role2.name:
-            result1 = role2.int + roll3
-        game.resolve3
+    print(game.c2, "!")
+    roll2 = game.dice
+    print("You rolled a ", roll2)
+    if player == role1.name:
+        result1 = role1.strg + roll2
+    elif player == role2.name:
+        result1 = role2.strg + roll2
+    game.resolve2
+
+    print(game.c3, "!")
+    roll3 = game.dice
+    print("You rolled a ", roll3)
+    if player == role1.name:
+        result1 = role1.int + roll3
+    elif player == role2.name:
+        result1 = role2.int + roll3
+    game.resolve3
 
     game.check
